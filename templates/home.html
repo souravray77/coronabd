@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CORONA UPDATE BANGLADESH</title>
+</head>
+<body bgcolor='black'>
+    <h1><font color="orange" align="center">করোনা পরিস্থিতি বাংলাদেশ</font> </h1>
+    <h3> <font color="white">24 ঘন্টায় পরীক্ষা = {{test}}</font></h3>
+   <h3> <font color="yellow">24 ঘন্টায় আক্রান্ত = {{affected}}</font></h3>
+   <h3> <font color="green">24 ঘন্টায় সুস্থ = {{recovared}}</font></h3>
+   <h3> <font color="red">24 ঘন্টায় মৃত্যু = {{deth}}</font></h3>
+   <h3> <font color="red"> সর্বমোট মৃত্যু= {{total_deth}}</font></h3>
+   <h3>  <font color="yellow"> সর্বমোট আক্রান্ত = {{total_affected}}</font></h3> 
+   <h3> <font color="green"> সর্বমোট সুস্থ = {{total_recovared}}</font></h3>
+   <h3>  <font color="white"> সর্বমোট পরীক্ষা = {{total_test}}</font></h3>
+   <br>
+   <br>
+   <marquee><h2><font color="red">{{ update_news }}</font> </h2></marquee>
+   <br>
+   <br>
+   <form action="em" method="POST">
+    {% csrf_token %}
+    <h3><font color="red">তথ্যগুলো কারো কাছে পাঠাতে তার ইমেইল লিখুন</font> </h3>
+    <input type="email" placeholder="type your email" name="email">
+    <br><br>
+    <input type="submit">
+
+   </form>
+   <a href="aff"><h3><font color="blue">আপনি কী আক্রান্ত ? আমাদের তথ্য দিন </h3></a>
+</body>
+</html>

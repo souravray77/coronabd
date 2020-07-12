@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   
+    <title>Document</title>
+</head>
+<body bgcolor="gray">
+    <h3>name={{ name }}</h3>
+    <h3>postcode={{ postcode }}</h3>
+    <h3>problems={{ problem }}</h3>
+    <form action="cngp" method="POST">
+        {% csrf_token %}
+        <input type="text" placeholder="type your new name" name="nname"><br><br>
+  <input type="number" placeholder="type new postcode" name="npostcode"><br><br>
+  <input type= "number" placeholder="type your old number" name="onumber"><br><br>
+  <input type= "number" placeholder="type your new number" name="nnumber"><br><br>
+  <input type="text" placeholder="what is your new problem?" name="nproblem"><br><br>
+  <input type= "password" placeholder="make a strong password" name="npassword"><br><br>
+  <input type= "submit"  ><br><br><br><br>
+  
+    </form>
+    
+
+</body>
+</html>

@@ -1,0 +1,33 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tips for covid19</title>
+</head>
+<body bgcolor="gray">
+    
+<form action="subb" method="POST">
+    {% csrf_token %}
+  <input type="text" placeholder="type your name" name="name"><br><br>
+  <input type="number" placeholder="type postcode" name="postcode"><br><br>
+  <input type= "number" placeholder="type your number" name="number"><br><br>
+  <input type="text" placeholder="what is your problem?" name="problem"><br><br>
+  <input type= "password" placeholder="make a strong password" name="password"><br><br>
+  <input type= "submit"  ><br><br><br><br>
+  
+
+</form> 
+
+<h1> change your given data</h1><br>
+  <form action="cng" method="POST">
+    {% csrf_token %}
+    <input type="number" placeholder="type your number" name="lognum">
+    <input type="password" placeholder="type your passwpord" name="logpass">
+    <input type="submit" >
+
+  </form>
+</body>
+</html>
